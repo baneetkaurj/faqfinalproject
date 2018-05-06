@@ -66,5 +66,14 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+            $user->roles()->attach($data['role']); //you can get the roles from the data(form) that is generated
+            return $user;
+
+    }
+    public function showRegistrationForm()
+    {
+        $roles=\App\Role::orderBy('name')->pluck('name','id');
+        //print_r($roles);die;
+        return view('auth.register',compact('roles'));
     }
 }

@@ -28,10 +28,11 @@ class RolesSeeder extends Seeder
             'name'        => 'User',
             'slug'        => 'user',
             'permissions' => json_encode([
-                'view-question' => true,
-                'view-answer' => true,
                 'create-question' => true,
+                'view-question' => true,
                 'create-answer' => true,
+                'view-answer' => true,
+
 
 
             ]),

@@ -19,8 +19,8 @@ class CreateRolesTable extends Migration
             $table->string('slug')->unique();
             $table->text('permissions')->nullable();
             $table->timestamps();
+    });
     }
-
     /**
      * Reverse the migrations.
      *
