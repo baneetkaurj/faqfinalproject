@@ -44,12 +44,11 @@
                             </div>
 
                         </div>
-                        <div class="card-footer">
+                       <div class="card-footer">
                             <div class="float-right">
                                 {{ $questions->links() }}
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
