@@ -22,6 +22,8 @@
                         </a>
                             @endcan
                     </div>
+
+
                 </div>
 
             </div>

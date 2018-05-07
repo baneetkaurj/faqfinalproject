@@ -74,4 +74,5 @@ class User extends Authenticatable
         return false;    //if the role has access to a permission, then it will return true or false
     }
 
+
 }

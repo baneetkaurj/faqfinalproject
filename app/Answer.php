@@ -19,7 +19,4 @@ class Answer extends Model
         return $this->belongsTo('App\Question');
     }
 
-    public function likes(){
-        return $this->belongsTo('AppLike');
-    }
 }
